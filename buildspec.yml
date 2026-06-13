@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Packaging Lambda function..."
+      - zip function.zip lambda_function.py
+
+artifacts:
+  files:
+    - function.zip
